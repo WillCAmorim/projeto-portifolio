@@ -32,16 +32,9 @@ body{
 }
 
 img{
-  max-width: 350px;
+  max-width: 400px;
   display: block;
   background-position: cover;
   background-repeat: no-repeat;
 }
 
-.subtitulo{
-  font-size: 8rem;
-  word-break: break-all;
-  line-height: 1;
-  text-transform: uppercase;
-  max-width: 4ch;
-}

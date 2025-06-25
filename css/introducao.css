@@ -43,12 +43,12 @@
   background: linear-gradient(180deg, rgba(25, 133, 161, 0.69) 41%, rgba(62, 137, 20, 0.81) 52%);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .introducao {
     gap: 100px;
   }
   .introducao h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .introducao p {
     font-size: 1.25rem;
@@ -63,7 +63,7 @@
     gap: 80px;
   }
   .introducao h1 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
   }
   .introducao p {
     font-size: 1rem;
@@ -73,19 +73,27 @@
   }
 }
 
-@media (max-width: 501px) {
+@media (max-width: 544px) {
   .introducao {
-    gap: 40px;
+    gap: 15px;
+    margin: 0px;
+    padding: 0px;
   }
   .introducao img {
-    max-width: 125px;
+    max-width: 150px;
   }
   .introducao section > h1::before {
     width: 10px;
     left: -6px;
-    top: 5px;
+    top: 12px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 500px;
+  }
+  .introducao h1{
+    font-size: 2.3rem;
+  }
+  .introducao p{
+    margin-bottom: 15px;
   }
 }
