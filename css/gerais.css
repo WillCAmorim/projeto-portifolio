@@ -28,13 +28,20 @@ body{
   font-family: 'firaSans-Regular', Arial, Helvetica, sans-serif;
   color: #141414;
   display: grid;
-  margin-top: 20px;
+  background: #d7f0dc6b;
 }
 
 img{
-  max-width: 300px;
+  max-width: 350px;
   display: block;
-  border-radius: 50% 5px;
   background-position: cover;
   background-repeat: no-repeat;
+}
+
+.subtitulo{
+  font-size: 8rem;
+  word-break: break-all;
+  line-height: 1;
+  text-transform: uppercase;
+  max-width: 4ch;
 }

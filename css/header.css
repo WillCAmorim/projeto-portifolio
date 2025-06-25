@@ -1,0 +1,68 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 40px 4px;
+  background-color: black;
+}
+
+.header-nome {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-nome a {
+  margin-left: 5px;
+  font-size: 2rem;
+  font-family: 'Ephesis';
+  color: white;
+  word-spacing: 0.5rem;
+}
+
+.header-nome a:hover {
+  color: #1985A1;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header-menu a {
+  padding: 5px 10px;
+  border-radius: 25px;
+  background-color: #3E8914;
+  color: #e9e7e7;
+  transition: all 0.2s ease; /* suave no hover */
+}
+
+.header-menu a:hover {
+  padding: 10px;
+  background-color: #1985A1;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 705px) {
+  .header {
+    padding: 7.5px 10px;
+    gap: 2px;
+  }
+
+  .header-nome a {
+    font-size: 1.9rem;
+  }
+
+  .header-menu a {
+    font-size: 0.7rem;
+  }
+}
