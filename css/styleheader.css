@@ -1,0 +1,107 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  margin: 10px 50px;
+  padding: 15px 30px;
+  border-radius: 40px 4px;
+  gap: 15px;
+}
+
+.header-nome{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-nome a{
+  font-size: 2rem;
+  font-family: 'Ephesis';
+  color: white;
+}
+
+.header-nome a:hover{
+  color: #1985A1;
+}
+
+.header-menu{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header-menu a{
+  color: #e9e7e7;
+  background-color: #3E8914;
+  border-radius:25px;
+  padding: 5px 10px;
+}
+
+.header-menu a:hover{
+  padding: 10px;
+  background-color: #1985A1;
+  color: white;
+  
+}
+
+
+.menu-hamburguer {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.botao-menu {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.linha {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  transition: transform 0.3s ease;
+}
+
+.menu-itens {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: none; /* Oculta o menu inicialmente */
+  z-index: 9;
+}
+
+@media (max-width: 1000px){
+  .header {
+    font-size: 0.9rem;
+}
+}
+
+@media (max-width: 705px){
+  .header{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5px;
+    gap: 2px;
+    padding: 7.5px 10px;
+  }
+
+  .header-menu a{
+    font-size: 0.7rem;
+  }
+
+  .header-nome a{
+  font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'FiraSans-Regular';
+  src: url(../fontes/FiraSans-Regular.ttf);
+}
+@font-face {
+  font-family: "FiraSans-Bold";
+  src: url(../fontes/FiraSans-Bold.ttf)
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fontes/Roboto_Condensed-Regular.ttf)
+}
+
+@font-face {
+  font-family: "Ephesis";
+  src: url(/fontes/Ephesis-Regular.ttf);
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  font-family: 'firaSans-Regular', Arial, Helvetica, sans-serif;
+  color: #141414;
+  display: grid;
+  margin-top: 20px;
+}
+
+img{
+  max-width: 300px;
+  display: block;
+  border-radius: 50% 5px;
+  background-position: cover;
+  background-repeat: no-repeat;
+}
