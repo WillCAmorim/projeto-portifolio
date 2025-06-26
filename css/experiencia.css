@@ -33,15 +33,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 20px;
-  background-color: #bfecf77c;
+  background-color: #ebebeb;
   border-radius: 4px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.233);
+  color: #525252;
 }
 
 .empresa-titulo {
   font-size: 1.125rem;
   line-height: 1.1;
   font-weight: bold;
+  color: #070707;
 }
 
 .empresa-ano {
@@ -50,7 +52,7 @@
   left: -100px;
   font-size: 1.2rem;
   font-weight: bold;
-  color: #525252;
+  color: #070707;
 }
 
 .empresa-habilidades {
@@ -58,6 +60,7 @@
   flex-wrap: wrap;
   gap: 10px;
   align-content: start;
+  color: #070707;
 }
 
 .empresa-habilidades li {
@@ -91,6 +94,7 @@
   font-size: 3rem;
   word-break: normal;
   margin: 0 auto;
+  color: rgba(0, 0, 0, 0.76);
 }
 
   .experiencia{

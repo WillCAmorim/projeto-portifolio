@@ -1,0 +1,25 @@
+.formacao{
+  background-color: black;
+  color: white;
+  padding: 30px;
+  margin-bottom: 1000px;
+  padding-bottom: 1000px;
+}
+
+.formacao-titulo{
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 3.5rem;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.formacao-texto{
+  font-size: 1.125rem;
+  color: #666565;
+  margin-bottom: 50px;
+  max-width: 500px;
+}
+
+.formacao-texto strong{
+  color: white;
+}
