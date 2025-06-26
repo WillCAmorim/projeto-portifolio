@@ -4,9 +4,10 @@
   justify-content: space-between;
   gap: 15px;
   padding: 15px 30px;
-  margin: 10px;
-  border-radius: 40px 4px;
+  margin: 5px;
+  border-radius: 100px 0px;
   background-color: black;
+  box-shadow: 2px 2px 2px black;
 }
 
 .header-nome {
@@ -17,7 +18,7 @@
 .header-nome a {
   margin-left: 5px;
   font-size: 2rem;
-  font-family: 'Ephesis';
+  font-family: 'Ephesis', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: white;
   word-spacing: 0.5rem;
 }
@@ -37,7 +38,7 @@
   border-radius: 25px;
   background-color: #3E8914;
   color: #e9e7e7;
-  transition: all 0.2s ease; /* suave no hover */
+  transition: all 0.2s ease;
 }
 
 .header-menu a:hover {
@@ -46,25 +47,22 @@
   color: white;
 }
 
-@media (max-width: 1000px) {
-
-}
-
 @media (max-width: 705px) {
   .header {
-    padding: 7.5px;
     gap: 2px;
+    justify-content: space-around;
+    margin-bottom: 30px;
   }
   .header-nome a {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .header-menu a {
-    font-size: 1rem;
+    font-size: .9rem;
   }
 }
 
-@media (max-width: 500px){
+@media (max-width: 520px){
   .header{
     display: flex;
     flex-direction: column;
@@ -73,14 +71,15 @@
     gap: 20px;
     margin: 0px;
     padding-bottom: 20px;
+    margin-bottom: 30px;
   }
 
     .header-nome a {
-    font-size: 1.7rem;
+    font-size: 2rem;
 
   }
 
   .header-menu a {
-    font-size: .8rem;
+    font-size: 1rem;
   }
 }
