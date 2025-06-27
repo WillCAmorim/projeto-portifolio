@@ -24,7 +24,7 @@
 }
 
 .header-nome a:hover {
-  color: #1985A1;
+  color: #70DA1C;
 }
 
 .header-menu {
@@ -36,16 +36,17 @@
 .header-menu a {
   padding: 5px 10px;
   border-radius: 25px;
-  background-color: #3E8914;
+  background-color: #3D7045;
   color: #e9e7e7;
   transition: all 0.2s ease;
 }
 
 .header-menu a:hover {
   padding: 10px;
-  background-color: #1985A1;
+  background-color: #233548;
   color: white;
 }
+
 
 @media (max-width: 705px) {
   .header {

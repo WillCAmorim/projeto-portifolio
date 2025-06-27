@@ -8,22 +8,24 @@
 }
 
 .subtitulo {
-  color: #e0e0e0;
-  font-size: 8rem;
+  color: #233548;
+  font-size: 6rem;
   align-self: start;
   line-height: 1;
   text-transform: uppercase;
   word-break: break-all;
   font-family: "Roboto";;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.514);
 
 }
 
 .experiencia-texto {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.2;
   max-width: 42ch;
   margin-bottom: 60px;
   color: #525252;
+  font-size: 1.4rem;
 }
 
 .empresa {
@@ -37,10 +39,11 @@
   border-radius: 4px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.233);
   color: #525252;
+  font-size: 1.2rem;
 }
 
 .empresa-titulo {
-  font-size: 1.125rem;
+  font-size: 1.4rem;
   line-height: 1.1;
   font-weight: bold;
   color: #070707;
@@ -65,12 +68,17 @@
 
 .empresa-habilidades li {
   font-size: .875rem;
-  line-height: 1.4;
+  line-height: 1.5;
   border-radius: 8px;
   background-color: #1986a162;
   padding: 5px 10px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.233);
 }
+
+.experiencia-texto {
+  font-size: 1.3rem;
+}
+
 
 .experiencia-texto strong {
   color: #141414;
@@ -86,7 +94,6 @@
   left: -2.5px;
 }
 
-/* Tablet */
 @media (max-width: 1100px) {
 
   .subtitulo {
@@ -94,7 +101,6 @@
   font-size: 3rem;
   word-break: normal;
   margin: 0 auto;
-  color: rgba(0, 0, 0, 0.76);
 }
 
   .experiencia{
@@ -122,7 +128,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 750px) {
   .experiencia {
     grid-template-columns: 1fr;
@@ -149,84 +154,3 @@
     left: 0px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media (max-width: 600px) {
-
-  .subtitulo{
-    font-size: 4rem;
-    max-width: none;
-    text-align: center;
-    margin-bottom: 0px;
-  }
-
-  .experiencia {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 20px;
-  }
-
-  .experiencia-texto {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 30px;
-    max-width: 100%;
-  }
-
-  .empresa {
-    grid-template-columns: 1fr;
-    padding: 15px;
-    position: relative;
-  }
-
-  .empresa-ano {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-bottom: 5px;
-    font-size: 0.9rem;
-    color: #1985A1;
-  }
-
-  .empresa::before {
-    content: "";
-    display: block;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 4px;
-    margin-bottom: 5px;
-    border-radius: 999px;
-    background: linear-gradient(90deg, rgba(25, 133, 161, 0.69), rgba(62, 137, 20, 0.81));
-  }
-
-  .empresa-titulo {
-    font-size: 1rem;
-  }
-
-  .empresa-texto {
-    font-size: 0.8rem;
-    line-height: 1.4;
-  }
-
-  .empresa-habilidades {
-    gap: 6px;
-  }
-
-  .empresa-habilidades li {
-    font-size: 0.75rem;
-    padding: 4px 8px;
-  }
-}
- */

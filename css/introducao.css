@@ -33,6 +33,12 @@
   color: #8f918f;
 }
 
+.introducao img{
+  border-radius: 40px 0px;
+  box-shadow: 1px 1px 3px black;
+
+}
+
 .detalhe::after {
   content: "";
   display: block;
