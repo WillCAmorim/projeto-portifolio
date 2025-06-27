@@ -1,25 +1,49 @@
 .formacao{
-  background-color: black;
-  color: white;
-  padding: 30px;
-  margin-bottom: 1000px;
-  padding-bottom: 1000px;
+  background-color: #141414;
+  color: #FFFFFF;
+  padding: 15px;
 }
 
 .formacao-titulo{
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 3.5rem;
   text-align: left;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  font-size: 3rem;
 }
 
 .formacao-texto{
-  font-size: 1.125rem;
-  color: #666565;
-  margin-bottom: 50px;
-  max-width: 500px;
+  font-size: 1.14rem;
+  line-height: 1.5;
+  color: #525252;
+  max-width: 60ch;
+  padding-bottom: 50px;
 }
 
 .formacao-texto strong{
   color: white;
 }
+
+.formacao-descricao{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.formacao-div {
+  background-color: #000000;
+  border-radius: 4px;
+  height: 150px;
+  width: 250px;
+  margin: 0 auto;
+
+}
+
+.formacao-div::before{
+  content:'';
+  width: 4px;
+  height: 20px;
+  background-color: #9EF020;
+  position: relative;
+  left: -12px;
+  top: 5px;
+}
+

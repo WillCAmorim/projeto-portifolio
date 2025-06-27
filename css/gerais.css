@@ -29,6 +29,7 @@ body{
 }
 
 img{
+  min-width: 200px;
   max-width: 400px;
   display: block;
   background-position: cover;

@@ -1,30 +1,22 @@
-.header {
+.header{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-  padding: 15px 30px;
-  margin: 5px;
-  border-radius: 100px 0px;
-  background-color: black;
+  justify-content:space-between;
+  background-color: #141414;
   box-shadow: 2px 2px 2px black;
+  padding: 10px;
+
 }
 
-.header-nome {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.header-nome a {
-  margin-left: 5px;
-  font-size: 2rem;
-  font-family: 'Ephesis', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: white;
-  word-spacing: 0.5rem;
+.header-nome a{
+  margin-left: 8px;
+  color: #E0E0E0;
+  font-size: 1.5rem;
 }
 
 .header-nome a:hover {
-  color: #70DA1C;
+  color: #3D7045;
+  transition: all 0.2s ease;
 }
 
 .header-menu {
@@ -33,54 +25,15 @@
   gap: 10px;
 }
 
-.header-menu a {
-  padding: 5px 10px;
-  border-radius: 25px;
+.header-menu a{
   background-color: #3D7045;
-  color: #e9e7e7;
-  transition: all 0.2s ease;
+  border-radius: 15px;
+  padding: 3px 5px;
+  color: #E0E0E0;
 }
 
 .header-menu a:hover {
-  padding: 10px;
   background-color: #233548;
-  color: white;
-}
-
-
-@media (max-width: 705px) {
-  .header {
-    gap: 2px;
-    justify-content: space-around;
-    margin-bottom: 30px;
-  }
-  .header-nome a {
-    font-size: 1.6rem;
-  }
-
-  .header-menu a {
-    font-size: .9rem;
-  }
-}
-
-@media (max-width: 520px){
-  .header{
-    display: flex;
-    flex-direction: column;
-    border-radius: 0px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
-    gap: 20px;
-    margin: 0px;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-  }
-
-    .header-nome a {
-    font-size: 2rem;
-
-  }
-
-  .header-menu a {
-    font-size: 1rem;
-  }
+  padding: 8px;
+  transition: all 0.2s ease;
 }
