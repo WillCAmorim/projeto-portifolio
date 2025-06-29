@@ -11,7 +11,7 @@
   font-family: "FiraSans-Bold", Arial, Helvetica, sans-serif;
   line-height: 1.125;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.475rem;
   margin-bottom: 30px;
 }
 
@@ -36,9 +36,9 @@
 .detalhe::after {
   content: "";
   display: block;
-  max-width: 700px;
+  max-width: 1000px;
   height: 4px;
   margin: 0 auto 60px;
   border-radius: 70%;
-  background: linear-gradient(180deg, rgba(25, 133, 161, 0.69) 41%, rgba(62, 137, 20, 0.81) 52%);
+  background: linear-gradient(180deg, #70DA1C 49%, #86fc27 52%);
 }
