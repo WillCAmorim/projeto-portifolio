@@ -1,13 +1,11 @@
 .formacao{
   background-color: #141414;
   color: #FFFFFF;
-  padding: 15px;
+  margin: 0 auto;
 }
 
 .formacao-titulo{
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  text-align: left;
-  margin-bottom: 40px;
   font-size: 3rem;
 }
 
@@ -23,27 +21,4 @@
   color: white;
 }
 
-.formacao-descricao{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.formacao-div {
-  background-color: #000000;
-  border-radius: 4px;
-  height: 150px;
-  width: 250px;
-  margin: 0 auto;
-
-}
-
-.formacao-div::before{
-  content:'';
-  width: 4px;
-  height: 20px;
-  background-color: #9EF020;
-  position: relative;
-  left: -12px;
-  top: 5px;
-}
 

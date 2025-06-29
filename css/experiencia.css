@@ -2,7 +2,8 @@
   max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr;
-  margin: 15px;
+  margin: 0 auto
+
 }
 
 .subtitulo {
