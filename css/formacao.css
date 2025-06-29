@@ -1,24 +1,123 @@
-.formacao{
+.formacao-container{
   background-color: #141414;
   color: #FFFFFF;
   margin: 0 auto;
+  position: relative;
 }
 
-.formacao-titulo{
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 3rem;
+.formacao .subtitulo{
+ padding-top: 50px;
+ font-size: 3.5rem;
 }
 
 .formacao-texto{
-  font-size: 1.14rem;
-  line-height: 1.5;
-  color: #525252;
-  max-width: 60ch;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #a3a3a3;
+  max-width: 50ch;
   padding-bottom: 50px;
+  margin: 0 auto;
 }
 
 .formacao-texto strong{
   color: white;
 }
 
+.faculdade-lista{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 60px;
+}
 
+.faculdade {
+  flex: 1;
+  background: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.faculdade-tipo{
+  font-size: 0.875rem;
+  color: #a3a3a3;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.faculdade-curso{
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  position: relative;
+  flex: 1;
+}
+
+.faculdade-curso::before{
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  background: linear-gradient(#70DA1C, #CCF235) ;
+  left: -12px;
+}
+
+.faculdade-instituicao{
+  color: #a3a3a3;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.formacao-extra{
+  margin: 50px;
+}
+
+.cursos{
+  padding-bottom: 60px;
+}
+
+.formacao-extra h3 {
+font-size: 1.2rem;
+color: #8f8f8f;
+text-transform: uppercase;
+margin-bottom: 25px;
+position: relative;
+}
+
+.formacao-extra h3::before{
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../img/cursos.svg) no-repeat center center;
+  position: absolute;
+  left: -27px;
+}
+
+.formacao-extra li{
+  font-size: 1rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.formacao-extra span{
+  color: #a3a3a3;
+}
+
+.cursos li{
+  display: flex;
+  justify-content: space-between;
+}
+
+.formacao-container::after{
+  content:"";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(../img/detalhe.svg) no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+}

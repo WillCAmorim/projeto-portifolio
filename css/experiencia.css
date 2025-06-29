@@ -1,26 +1,24 @@
 .experiencia {
   max-width: 1200px;
-  display: grid;
-  grid-template-columns: 1fr;
   margin: 0 auto
-
 }
 
 .subtitulo {
   color: #E0E0E0;
   text-align: center;
   text-transform: uppercase;
-  font-size: 3rem;
-  margin-bottom: 60px;
+  font-size: 2.5rem;
+  margin-bottom: 60px
 }
 
 .experiencia-texto {
-  font-size: 1.14rem;
-  line-height: 1.5;
+  font-size: 1.1rem;
+  line-height: 1.4;
   color: #525252;
   max-width: 60ch;
   padding-bottom: 50px;
   margin: 0 auto;
+  padding: 10px;
 }
 
 .empresa {
@@ -41,11 +39,15 @@
 }
 
 .empresa-titulo {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #070707;
 }
 
+.empresa-texto{
+  color: #3b3b3b;
+  font-size: 0.9rem;
+}
 
 .empresa-habilidades {
   display: flex;
@@ -53,16 +55,15 @@
   gap: 10px;
   align-content: start;
   color: #070707;
+  font-size: 1rem;
 }
 
 .empresa-habilidades li {
-  line-height: 1.5;
   border-radius: 8px;
   background-color: #1986a162;
   padding: 5px 10px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.233);
 }
-
 
 .experiencia-texto strong {
   color: #141414;
