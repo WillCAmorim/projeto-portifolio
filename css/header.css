@@ -5,13 +5,12 @@
   background-color: #141414;
   box-shadow: 2px 2px 2px black;
   padding: 10px;
-
 }
 
 .header-nome a{
   margin-left: 8px;
   color: #E0E0E0;
-  font-size: 1.5rem;
+  font-size: 1.250rem;
 }
 
 .header-nome a:hover {
@@ -21,8 +20,7 @@
 
 .header-menu {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
 }
 
 .header-menu a{
@@ -34,6 +32,6 @@
 
 .header-menu a:hover {
   background-color: #233548;
-  padding: 8px;
+  padding: 5px;
   transition: all 0.2s ease;
 }
