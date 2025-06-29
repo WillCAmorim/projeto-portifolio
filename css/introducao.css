@@ -11,7 +11,7 @@
   font-family: "FiraSans-Bold", Arial, Helvetica, sans-serif;
   line-height: 1.125;
   position: relative;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin-bottom: 30px;
 }
 
@@ -20,7 +20,7 @@
   display: block;
   width: 130px;
   height: 100px;
-  background: url(/img/detalhe.svg);
+  background: url(../img/detalhe.svg);
   position: absolute;
   top: -35px;
   left: -60px;
