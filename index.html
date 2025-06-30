@@ -9,7 +9,10 @@
   <link rel="stylesheet" href="css/introducao.css">
   <link rel="stylesheet" href="css/experiencia.css">
   <link rel="stylesheet" href="css/formacao.css">
+  <link rel="stylesheet" href="css/contato.css">
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <script src="js/script.js"></script>
   <title>Portfólio Pessoal</title>
 
@@ -21,24 +24,32 @@
   </div>
 
   <nav class="header-menu">
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
     <a href="#experiencia">Experiência</a>
     <a href="#formacao">Formação</a>
     <a href="#contato">Contato</a>
   </nav>
 
-  <button class="hamburguer-btn" aria-label="Abrir menu">☰</button>
+  <button class="hamburguer-btn" id="hamburguer">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div class="mobile-menu" id="menu-mobile">
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#formacao">Formação</a>
+    <a href="#contato">Contato</a>
+  </div>
 </header>
 
-<nav class="mobile-menu" id="mobileMenu">
-  <a href="#experiencia">Experiência</a>
-  <a href="#formacao">Formação</a>
-  <a href="#contato">Contato</a>
-</nav>
+
 
 
 
 <main class="introducao container">
-  <img class="introducao-img" src="img/will-notebook-grande.png" alt="Foto de perfil com notebook">
+  <img class="introducao-img" id="inicio" src="img/will-notebook-grande.png" alt="Foto de perfil com notebook">
   <section class="introducao-conteudo">
     <h1>Desenvolvedor Front-End<br>& UX/UI Designer</h1>
     <p>Localizado no Espírito Santo.</p>
@@ -122,13 +133,13 @@
       <div class="faculdade">
         <span class="faculdade-tipo">Tecnólogo</span>
         <h3 class="faculdade-curso">Análise e Desenvolvimento de Sistemas</h3>
-        <span class="faculdade-instituicao">Uniasselvi</span>
+        <span class="faculdade-instituicao">UNIASSELVI</span>
       </div>
 
       <div class="faculdade">
         <span class="faculdade-tipo">Tecnólogo</span>
         <h3 class="faculdade-curso">Marketing</h3>
-        <span class="faculdade-instituicao">Estácio de Sá</span>
+        <span class="faculdade-instituicao">ESTÁCIO DE SÁ</span>
       </div>
     </div>
 
@@ -144,6 +155,36 @@
     </div>
   </div>
 </section>
+<section class="contato" id="contato">
+  <div class="contato-bg-svg">
+  <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+    <path fill="#1a1a1a" d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z"></path>
+  </svg>
+</div>
+  <div class="contato-grid">
+    
+    <!-- Coluna do título -->
+    <div class="subtituloc">
+      <h2>Contato</h2>
+    </div>
+
+    <!-- Coluna do conteúdo -->
+    <div class="contato-conteudo">
+
+      <ul class="contato-lista">
+        <li><i class="contato-email"></i> <a href="mailto:willian.c.amorim@outlook.com">willian.c.amorim@outlook.com</a></li>
+        <li><i class="fas fa-phone-alt"></i> <a href="tel:+5599999999999">(27)99769-7528</a></li>
+        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5527997697528" target="_blank">WhatsApp</a></li>
+        <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/willcamorim" target="_blank">LinkedIn</a></li>
+        <li><i class="fab fa-github"></i> <a href="https://github.com/WillCAmorim" target="_blank">GitHub</a></li>
+        <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/willc.amorim/" target="_blank">Instagram</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
 
 </body>
 </html>

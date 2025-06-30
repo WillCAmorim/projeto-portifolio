@@ -12,7 +12,7 @@
   color: #E0E0E0;
   text-align: center;
   text-transform: uppercase;
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   margin-bottom: 40px;
   font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
@@ -36,6 +36,7 @@
 
 .faculdade-lista {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin-bottom: 40px;
 }
@@ -47,6 +48,8 @@
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .faculdade-tipo {
@@ -54,6 +57,7 @@
   text-transform: uppercase;
   font-weight: 600;
   color: #6FCF97;
+  align-items: center;
 }
 
 .faculdade-curso {
@@ -61,6 +65,7 @@
   font-weight: 600;
   margin: 5px 0;
   color: #E0E0E0;
+  flex: 1;
 }
 
 .faculdade-instituicao {
@@ -81,20 +86,13 @@
   font-family: 'Inter', sans-serif;
 }
 
-.cursos ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .cursos li {
   background-color: #3D7045;
   color: #fff;
   padding: 10px 15px;
   border-radius: 6px;
   margin-bottom: 10px;
-  font-size: 0.95rem;
-  display: flex;
+  font-size: 1rem;
   justify-content: space-between;
   font-family: 'Inter', sans-serif;
 }
@@ -114,9 +112,6 @@
 
 
 @media (max-width: 768px) {
-  .formacao .subtitulo {
-    font-size: 1.8rem;
-  }
 
   .formacao-texto {
     font-size: 1rem;
@@ -127,9 +122,6 @@
     text-align: center;
   }
 
-  .formacao-extra {
-    align-items: center;
-  }
 
   .cursos li {
     flex-direction: column;
@@ -144,7 +136,7 @@
   }
 
   .formacao .subtitulo {
-    font-size: 2.6rem;
+    font-size: 5rem;
   }
 
   .formacao-texto {

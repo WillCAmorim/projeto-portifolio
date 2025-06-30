@@ -1,51 +1,53 @@
-/* Header atualizado */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #141414;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-  padding: 15px 25px;
   border-bottom: 1px solid #3D7045;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
   z-index: 1000;
+  padding: 10px;
 }
 
 .header-nome a {
-  margin-left: 5px;
-  color: #E0E0E0;
-  font-size: 1.3rem;
-  font-weight: bold;
-  letter-spacing: 1px;
+  color: #6FCF97;
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
   text-decoration: none;
-}
-
-.header-nome a:hover {
-  color: #3D7045;
-  transition: color 0.2s ease;
+  margin-left: 20px;
 }
 
 .header-menu {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .header-menu a {
-  background-color: #3D7045;
-  border-radius: 8px;
-  padding: 6px 10px;
   color: #E0E0E0;
-  font-size: 0.9rem;
   text-decoration: none;
-  transition: background 0.2s ease, padding 0.2s ease;
+  font-size: 0.95rem;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  margin-right: 20px;
 }
 
-.header-menu a:hover {
-  background-color: #233548;
-  padding: 7px 12px;
+.header-menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #6FCF97;
+  transition: width 0.3s ease;
 }
 
-/* Botão hambúrguer */
+.header-menu a:hover::after {
+  width: 100%;
+}
+
 .hamburguer-btn {
   display: none;
   font-size: 1.8rem;
@@ -53,9 +55,9 @@
   border: none;
   color: #E0E0E0;
   cursor: pointer;
+  margin-right: 20px;
 }
 
-/* Menu lateral direito */
 .mobile-menu {
   position: fixed;
   top: 70px;
@@ -86,9 +88,7 @@
   background-color: #233548;
 }
 
-
-
-/* Mostrar botão no mobile e esconder menu normal */
+/* Responsivo */
 @media (max-width: 768px) {
   .header-menu {
     display: none;
@@ -97,11 +97,8 @@
   .hamburguer-btn {
     display: block;
   }
-
-  
 }
 
-/* Esconde completamente o menu lateral em telas grandes */
 @media (min-width: 769px) {
   .mobile-menu {
     display: none !important;

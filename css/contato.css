@@ -1,0 +1,116 @@
+.contato {
+  background: linear-gradient(180deg, #141414 0%, #1a1a1a 100%);
+  padding: 80px 20px;
+}
+
+.contato-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.subtituloc h2 {
+  color: #6FCF97;
+  font-size: 2.8rem;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contato-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: surgir 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.contato-lista {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.contato-lista li {
+  font-size: 1.250rem;
+  font-family: 'Inter', sans-serif;
+  color: #D4D4D4;
+}
+
+.contato-lista li i {
+  margin-right: 8px;
+  color: #6FCF97;
+}
+
+.contato-lista li a {
+  color: #6FCF97;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contato-lista li a:hover {
+  color: #3D7045;
+}
+
+/* Animação */
+@keyframes surgir {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contato-lista li a {
+  position: relative;
+  color: #6FCF97;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contato-lista li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #6FCF97;
+  transition: width 0.3s ease;
+}
+
+.contato-lista li a:hover::after {
+  width: 100%;
+}
+
+
+/* RESPONSIVO - TELAS MAIORES */
+@media (min-width: 900px) {
+  .contato-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 200px;
+  }
+
+  .subtituloc h2 {
+    font-size: 4rem;
+    text-align: left;
+    line-height: 1.1;
+  }
+
+  .contato-texto {
+    text-align: left;
+    margin: 0;
+  }
+
+  .contato-lista {
+    align-items: flex-start;
+  }
+}
