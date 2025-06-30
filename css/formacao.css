@@ -1,123 +1,162 @@
-.formacao-container{
-  background-color: #141414;
-  color: #FFFFFF;
-  margin: 0 auto;
-  position: relative;
+.formacao {
+  background-color: #121212;
+  padding: 60px 20px;
 }
 
-.formacao .subtitulo{
- padding-top: 50px;
- font-size: 3.5rem;
-}
-
-.formacao-texto{
-  font-size: 1rem;
-  line-height: 1.2;
-  color: #a3a3a3;
-  max-width: 50ch;
-  padding-bottom: 50px;
+.formacao-container {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.formacao-texto strong{
-  color: white;
+.formacao .subtitulo {
+  color: #E0E0E0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
 }
 
-.faculdade-lista{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 60px;
+.formacao-texto {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #A0A0A0;
+  max-width: 60ch;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.formacao-texto strong,
+.faculdade-tipo,
+.faculdade-instituicao {
+  color: #D4D4D4;
+}
+
+.faculdade-lista {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 40px;
 }
 
 .faculdade {
-  flex: 1;
-  background: black;
-  padding: 10px;
-  border-radius: 5px;
+  background-color: #1A1A1A;
+  padding: 20px;
+  border-bottom: 3.5px solid #6FCF97;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: 'Inter', sans-serif;
+}
+
+.faculdade-tipo {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #6FCF97;
+}
+
+.faculdade-curso {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 5px 0;
+  color: #E0E0E0;
+}
+
+.faculdade-instituicao {
+  font-size: 0.95rem;
+  color: #bdbdbd;
+}
+
+.formacao-extra {
   display: flex;
   flex-direction: column;
-  margin: 15px;
+  gap: 20px;
 }
 
-.faculdade-tipo{
-  font-size: 0.875rem;
-  color: #a3a3a3;
-  text-transform: uppercase;
+.cursos h3 {
+  font-size: 1.2rem;
+  color: #6FCF97;
   margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
 }
 
-.faculdade-curso{
-  font-size: 1.1rem;
-  margin-bottom: 40px;
-  position: relative;
-  flex: 1;
+.cursos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.faculdade-curso::before{
-  content: "";
-  display: block;
-  width: 4px;
-  height: 20px;
-  position: absolute;
-  background: linear-gradient(#70DA1C, #CCF235) ;
-  left: -12px;
-}
-
-.faculdade-instituicao{
-  color: #a3a3a3;
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-
-.formacao-extra{
-  margin: 50px;
-}
-
-.cursos{
-  padding-bottom: 60px;
-}
-
-.formacao-extra h3 {
-font-size: 1.2rem;
-color: #8f8f8f;
-text-transform: uppercase;
-margin-bottom: 25px;
-position: relative;
-}
-
-.formacao-extra h3::before{
-  display: block;
-  content: "";
-  width: 24px;
-  height: 24px;
-  background: url(../img/cursos.svg) no-repeat center center;
-  position: absolute;
-  left: -27px;
-}
-
-.formacao-extra li{
-  font-size: 1rem;
-  line-height: 1.1;
-  margin-bottom: 20px;
-}
-
-.formacao-extra span{
-  color: #a3a3a3;
-}
-
-.cursos li{
+.cursos li {
+  background-color: #3D7045;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
   display: flex;
   justify-content: space-between;
+  font-family: 'Inter', sans-serif;
 }
 
-.formacao-container::after{
-  content:"";
-  display: block;
-  width: 130px;
-  height: 100px;
-  background: url(../img/detalhe.svg) no-repeat center;
-  position: absolute;
-  bottom: -50px;
-  left: 20px;
+.animar {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: surgir 0.8s ease-out forwards;
+}
+
+@keyframes surgir {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .formacao .subtitulo {
+    font-size: 1.8rem;
+  }
+
+  .formacao-texto {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .faculdade {
+    text-align: center;
+  }
+
+  .formacao-extra {
+    align-items: center;
+  }
+
+  .cursos li {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .formacao {
+    padding: 100px 0;
+  }
+
+  .formacao .subtitulo {
+    font-size: 2.6rem;
+  }
+
+  .formacao-texto {
+    font-size: 1.2rem;
+  }
+
+  .faculdade-curso {
+    font-size: 1.3rem;
+  }
+
+  .cursos li {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
 }
